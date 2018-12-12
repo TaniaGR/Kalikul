@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF1707A4-D6B7-4770-9953-E334891BE743}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Zara</RootNamespace>
+    <AssemblyName>Zara</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\КП 02 01. Зеленина И-1-15\Программа\Zara\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\КП 02 01. Зеленина И-1-15\Программа\Zara\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="avtoriz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="avtoriz.Designer.cs">
+      <DependentUpon>avtoriz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="glav_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="glav_menu.Designer.cs">
+      <DependentUpon>glav_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kadr_rab_time.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kadr_rab_time.Designer.cs">
+      <DependentUpon>kadr_rab_time.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kadr_sotr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kadr_sotr.Designer.cs">
+      <DependentUpon>kadr_sotr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="podklclss.cs" />
+    <Compile Include="podkl_bd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="podkl_bd.Designer.cs">
+      <DependentUpon>podkl_bd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prodant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prodant.Designer.cs">
+      <DependentUpon>prodant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prodazhi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prodazhi.Designer.cs">
+      <DependentUpon>prodazhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ychet_sklad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ychet_sklad.Designer.cs">
+      <DependentUpon>ychet_sklad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ychet_zal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ychet_zal.Designer.cs">
+      <DependentUpon>ychet_zal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zara_base2DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Zara_base2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Zara_base2DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Zara_base2DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Zara_base2DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Zara_base2DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Zara_base2DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Zara_base2DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Zara_base2DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Zara_base2DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Zara_base2DataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Zara_base2DataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Zara_baseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Zara_baseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Zara_baseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Zara_baseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Zara_baseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Zara_baseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="avtoriz.resx">
+      <DependentUpon>avtoriz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="glav_menu.resx">
+      <DependentUpon>glav_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kadr_rab_time.resx">
+      <DependentUpon>kadr_rab_time.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kadr_sotr.resx">
+      <DependentUpon>kadr_sotr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="podkl_bd.resx">
+      <DependentUpon>podkl_bd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prodant.resx">
+      <DependentUpon>prodant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prodazhi.resx">
+      <DependentUpon>prodazhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ychet_sklad.resx">
+      <DependentUpon>ychet_sklad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ychet_zal.resx">
+      <DependentUpon>ychet_zal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Zara_base2DataSet.xsc">
+      <DependentUpon>Zara_base2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Zara_base2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Zara_base2DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Zara_base2DataSet.xss">
+      <DependentUpon>Zara_base2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Zara_base2DataSet1.xsc">
+      <DependentUpon>Zara_base2DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Zara_base2DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Zara_base2DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Zara_base2DataSet1.xss">
+      <DependentUpon>Zara_base2DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Zara_base2DataSet2.xsc">
+      <DependentUpon>Zara_base2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Zara_base2DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Zara_base2DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Zara_base2DataSet2.xss">
+      <DependentUpon>Zara_base2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Zara_base2DataSet3.xsc">
+      <DependentUpon>Zara_base2DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Zara_base2DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Zara_base2DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Zara_base2DataSet3.xss">
+      <DependentUpon>Zara_base2DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Zara_base2DataSet4.xsc">
+      <DependentUpon>Zara_base2DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Zara_base2DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Zara_base2DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Zara_base2DataSet4.xss">
+      <DependentUpon>Zara_base2DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Zara_base2DataSet5.xsc">
+      <DependentUpon>Zara_base2DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Zara_base2DataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Zara_base2DataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Zara_base2DataSet5.xss">
+      <DependentUpon>Zara_base2DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Zara_baseDataSet.xsc">
+      <DependentUpon>Zara_baseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Zara_baseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Zara_baseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Zara_baseDataSet.xss">
+      <DependentUpon>Zara_baseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Zara_baseDataSet1.xsc">
+      <DependentUpon>Zara_baseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Zara_baseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Zara_baseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Zara_baseDataSet1.xss">
+      <DependentUpon>Zara_baseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Zara_baseDataSet2.xsc">
+      <DependentUpon>Zara_baseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Zara_baseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Zara_baseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Zara_baseDataSet2.xss">
+      <DependentUpon>Zara_baseDataSet2.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zara_brand.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zara.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ccf9d64b7812d141733dc544b5bd8419.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A-Zara-Store-Buy-Zara-Clothes-India-Online-.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A-Zara-Store-Buy-Zara-Clothes-India-Online-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ONAddInForWord">
+      <Guid>{A717753E-C3A6-4650-9F60-472EB56A7061}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
